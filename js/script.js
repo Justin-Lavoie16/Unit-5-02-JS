@@ -4,10 +4,10 @@ if (navigator.serviceWorker) {
   })
 }
 
-"use strict"
+;("use strict")
 
-const randomNumber = Math.floor(Math.random() * -6) + -1;
-const random = Math.floor(Math.random() * 6) + 1;
+const randomNumber = Math.floor(Math.random() * -6) + -1
+const random = Math.floor(Math.random() * 6) + 1
 
 function updateSliderValue(valueFromSlider) {
   document.getElementById("slider-value").innerHTML = valueFromSlider
@@ -17,13 +17,13 @@ function updateSliderValue(valueFromSlider) {
  * This function displays the slider value.
  */
 function myButtonClicked() {
-  buttonOnChecked = document.getElementById('flash1').checked
+  buttonOnChecked = document.getElementById("flash1").checked
 
   if (buttonOnChecked == true) {
     document.getElementById("hello-world").innerHTML =
-    "the Value is: " + random + "!"
+      "the Value is: " + random + "!"
   } else {
     document.getElementById("hello-world").innerHTML =
-    "the Value is: " + randomNumber + "!"
+      "the Value is: " + randomNumber + "!"
   }
 }
